@@ -7,6 +7,7 @@ Requisitos para corre app:
 Primero levantar consult en un contenedor docker sgt comandos
 
  docker pull consul
+ `línea de código`
  
  docker run \
     -d \
