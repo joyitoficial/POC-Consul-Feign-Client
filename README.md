@@ -4,7 +4,14 @@ Requisitos para corre app:
 - Docker
 - IDE preferenci IntelliJ Idea
 
-Primero levantar consult en un contenedor docker
+Primero levantar consult en un contenedor docker sgt comandos
 
-![image](https://user-images.githubusercontent.com/83673179/236391756-2d8364c5-03be-416b-a28f-77b8bf5a0b19.png)
+ docker pull consul
+ 
+ docker run \
+    -d \
+    -p 8500:8500 \
+    -p 8600:8600/udp \
+    --name=badger \
+    consul agent -server -ui -node=server-1 -bootstrap-expect=1 -client=0.0.0.0
 
